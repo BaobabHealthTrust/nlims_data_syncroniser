@@ -12,8 +12,12 @@ Nlims Data Suncroniser is a Laboratory Information Management System (LIMS) serv
 
 ### Requirements
 
-* Ruby  2.5.1
-* Rails 5.2.1
+* Ruby ~> 2.5.1
+* Rails ~> 5.2.1
+* Bundler ~> 2.1.4
+* Gem ~> 2.7.6
+* MySQL ~> 5.7
+* CouchDB ~> 3.1.0
 
 * Database creation
 	rake db:migrate -- it creates two tables (sites and site_sync_frequncies) in the "lims_db" database, the "lims_db_database" is the database which is created by the nlims_controller module
