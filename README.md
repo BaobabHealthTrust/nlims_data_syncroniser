@@ -146,3 +146,15 @@ Nlims Data Suncroniser is a Laboratory Information Management System (LIMS) serv
       
    2. Deploy
    
+### Contribution
+
+We are very much willing to have your contributions. 
+Contact [BHT](http://baobabhealth.org/) software development team @ developers@bht-mw.org for such arrangements.
+
+### Issues
+
+Issues with the system can be logged on directy here on [git](https://github.com/BaobabHealthTrust/nlims_data_syncroniser/issues). You can also contact [BHT](http://baobabhealth.org/) software support team @ bhtsupport@bht-mw.org.
+
+### License
+
+[MPL-2.0](https://github.com/BaobabHealthTrust/nlims_controller/blob/master/LICENSE)
