@@ -28,10 +28,8 @@ class CouchdbMysqlSynchroniser
       File.open("#{Rails.root}/tmp/couch_seq_number",'w'){ |f|
           f.write(seq)
       }     
-      puts "hello--------------"
-     puts docs
+      logger.info("Syncing #{doc['id']}");
       docs.each do |document|
-        puts "-------------------------"
         puts document
         tracking_number = document['doc']['tracking_number']
         couch_id =  document['doc']['_id']
