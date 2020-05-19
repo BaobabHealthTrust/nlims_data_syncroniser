@@ -1,3 +1,5 @@
+[![GitHub issues](https://img.shields.io/github/issues/BaobabHealthTrust/nlims_data_syncroniser)](https://github.com/BaobabHealthTrust/nlims_data_syncroniser/issues) [![GitHub forks](https://img.shields.io/github/forks/BaobabHealthTrust/nlims_data_syncroniser)](https://github.com/BaobabHealthTrust/nlims_data_syncroniser/network) [![GitHub stars](https://img.shields.io/github/stars/BaobabHealthTrust/nlims_data_syncroniser)](https://github.com/BaobabHealthTrust/nlims_data_syncroniser/stargazers) [![GitHub license](https://img.shields.io/github/license/BaobabHealthTrust/nlims_data_syncroniser)](https://github.com/BaobabHealthTrust/nlims_data_syncroniser)
+
 ### Brief description
 
 Nlims Data Suncroniser is a Laboratory Information Management System (LIMS) service which is used to exchange data between two sites. The exchange is done through Couchdb, using its sync functionality and MySQL. Data is exchanged, first, between MySQL and Couchdb before Couchdb syncronises with another CouchDB in another facility or site.
