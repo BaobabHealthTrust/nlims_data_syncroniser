@@ -1,15 +1,19 @@
-# README
+### Brief description
 
-NOTES
+Nlims Data Suncroniser is a Laboratory Information Management System (LIMS) service which is used to exchange data between two sites. The exchange is done through Couchdb, using its sync functionality and MySQL. Data is exchanged, first, between MySQL and Couchdb before Couchdb syncronises with another CouchDB in another facility or site.
 
--This module is used for syncronizing data between couchdb at site A with couchdb at site B. Again it will syncronize data at site A, from couchdb to mysql database at that site.
 -Therefore, in order for syncing data from couchdb to couchdb, you have to add the sites through the user interface of this module. Two sites will have to be added, thus the site at which
  module is being installed, and the other site. The other site will probably be the molecular laboratory centre were the testing of the samples will be done.
 
+### Dependancy
 
-* Ruby version
-	ruby  2.5.1
-	rails 5.2.1
+* [Nlims Controller](https://github.com/BaobabHealthTrust/nlims_controller)
+* [iBLIS](https://github.com/BaobabHealthTrust/iBlis)
+
+### Requirements
+
+* Ruby  2.5.1
+* Rails 5.2.1
 
 * Database creation
 	rake db:migrate -- it creates two tables (sites and site_sync_frequncies) in the "lims_db" database, the "lims_db_database" is the database which is created by the nlims_controller module
