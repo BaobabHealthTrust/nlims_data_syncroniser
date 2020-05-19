@@ -46,7 +46,8 @@ Nlims Data Suncroniser is a Laboratory Information Management System (LIMS) serv
    
 2. Configure your database.
 
-   While still in config folder, provide details of your mysql database in database.yml and couchdb in couchdb.yml respectively. 
+   This section requires that [nlims_controller](https://github.com/BaobabHealthTrust/nlims_controller) be installed and running.
+   While still in config folder, provide details of your nlims_controller mysql database in database.yml and nlims_controller couchdb in couchdb.yml respectively. 
    
    For database.yml, replace username with the username of your mysql and password with the password of your mysql.
    
@@ -64,16 +65,16 @@ Nlims Data Suncroniser is a Laboratory Information Management System (LIMS) serv
    .<br>
    development:<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<: *default<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;database: lims_db<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;database: **your_nlims_database**<br>
    test:<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<: *default<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;database: lims_test<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;database: **your_nlims_test_database**<br>
    .<br>
    .<br>
    .<br>
    production:<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<<: *default<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;database: nlims_production<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;database: **your_nlims_production_database**<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username: **your_username**<br>
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password: <%= ENV['NLIMS_DATABASE_PASSWORD'] %><br>
    
@@ -107,11 +108,10 @@ Nlims Data Suncroniser is a Laboratory Information Management System (LIMS) serv
    ```
    Initiate database by running this command;
    ```bash
-   rails db:create
    rails db:migrate
    rails db:seed
    ```
-   NB: Database initialization is completed by a service called [nlims_data_syncroniser](https://github.com/BaobabHealthTrust/nlims_data_syncroniser.git). This service is used to sync data between two sites using couchdb. 
+    
 ### Development
 
    To run the application in development server, type the following in commandline:
