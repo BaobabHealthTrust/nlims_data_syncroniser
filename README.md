@@ -118,11 +118,11 @@ Nlims Data Suncroniser is a Laboratory Information Management System (LIMS) serv
 
    To run the application in development server, type the following in commandline:
    ```bash
-   rails s -p 3010
+   rails s -p 3011
    ```
    Or using a passenger
    ```bash
-   passenger start -p 3010
+   passenger start -p 3011
    ```
 ### Test
 
